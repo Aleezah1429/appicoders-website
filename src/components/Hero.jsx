@@ -136,12 +136,12 @@ const Hero = () => {
                 fontSize: '1rem',
                 textTransform: 'uppercase',
                 borderRadius: '5px',
-                backgroundColor: '#6D0407',
+                background: "linear-gradient(180deg, #6D0407 0%, #5b0000 100%)", 
                 boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
                 '&:hover': {
                   borderColor: '#d32f2f',
                   borderWidth: 2,
-                  backgroundColor: 'rgba(211, 47, 47, 0.1)',
+                  background: "linear-gradient(180deg, #1a0000 0%, #5b0000 100%)",
                 },
               }}
             >

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography, Link } from "@mui/material"; 
-import logo from "../assets/logo.png"; 
+import logo from "../assets/Logo.png"; 
 import fbLogo from "../assets/fb.png";
 import twitterLogo from "../assets/twitter.png";
 import linkedinLogo from "../assets/linkedIn.png";
