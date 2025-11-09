@@ -79,21 +79,24 @@ const About = () => {
             </Typography>
             <Button
               variant="contained"
-              sx={{
-                background: 'linear-gradient(to right, #990000 0%, #E62020 100%)',
-                color: '#FFFFFF',
-                fontWeight: 700,
-                fontSize: { xs: '0.8rem', sm: '0.875rem' },
-                textTransform: 'uppercase',
-                padding: { xs: '12px 28px', sm: '14px 36px' },
-                borderRadius: '6px',
+              sx={{  
+                width: {'xs': '100%', 'md': '260px'},
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.12)',
-                fontFamily: 'sans-serif',
-                width: { xs: 'auto', sm: 'auto' },
-                '&:hover': {
-                  background: 'linear-gradient(to right, #880000 0%, #D62020 100%)',
-                  boxShadow: '0 6px 10px rgba(0, 0, 0, 0.18)',
-                },
+                    height: {'xs': 'auto', 'md': '55px'},
+                    background: 'linear-gradient(to right, #990000 0%, #E62020 100%)',
+                    color: '#fff',
+                    py: { xs: 1.25, md: 1.5 },
+                    px: { xs: 3, md: 4 },
+                    alignSelf: 'flex-start',
+                    fontWeight: 600,
+                    fontSize: { xs: '0.85rem', md: '1.25rem' },
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                    borderRadius: '4px',
+                    '&:hover': {
+                      background: 'linear-gradient(to right, #880000 0%, #D62020 100%)',
+                      boxShadow: '0 6px 10px rgba(0, 0, 0, 0.18)',
+                    },
               }}
             >
               READ MORE

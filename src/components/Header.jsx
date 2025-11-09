@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   AppBar,
   Toolbar,
@@ -20,8 +20,19 @@ import logoImage from '../assets/Logo-Final-White.png';
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('lg'));
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setScrolled(scrollPosition > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -103,10 +114,12 @@ const Header = () => {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: 'transparent',
+          backgroundColor: scrolled ? '#20222D' : 'transparent',
           color: '#fff',
-          boxShadow: 'none',
+          boxShadow: scrolled ? '0 2px 10px rgba(0, 0, 0, 0.3)' : 'none',
           py: 1,
+          transition: 'all 0.3s ease-in-out',
+          backdropFilter: scrolled ? 'blur(10px)' : 'none',
         }}
       >
         <Toolbar

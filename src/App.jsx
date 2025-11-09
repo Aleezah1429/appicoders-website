@@ -6,6 +6,9 @@ import Features from './components/Features';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Technologies from './components/Technologies';
+import Testimonials from './components/Testimonials';
+import Products from './components/Products';
 
 const theme = createTheme({
   palette: {
@@ -37,6 +40,9 @@ function App() {
       <Hero />
       <About />
       <Features />
+      <Products />
+      <Testimonials />
+      <Technologies />
       <Contact />
       <Footer />
     </ThemeProvider>
