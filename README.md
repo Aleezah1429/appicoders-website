@@ -21,6 +21,7 @@ Fast deployment on Vercel
 ## Project Setup
 Clone Repository
 git clone [https://github.com/your-username/appicoders-website.git](https://github.com/Aleezah1429/appicoders-website)
+
 cd appicoders-website
 
 ## Install Dependencies
